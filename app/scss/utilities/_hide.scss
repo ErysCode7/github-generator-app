@@ -1,0 +1,50 @@
+//hide when reach certain breakpoint
+//desktop first
+.hide-for-mobile-df {
+    @include max-width(mobile) {
+        display: none;
+    }
+}
+
+.hide-for-tablets-df {
+    @include max-width(tablet) {
+        display: none;
+    }
+}
+
+.hide-for-laptops-df {
+    @include max-width(laptop) {
+        display: none;
+    }
+}
+
+.hide-for-desktop-df {
+    @include max-width(desktop) {
+        display: none;
+    }
+}
+
+//mobile first
+.hide-for-mobile-mf {
+    @include min-width(mobile) {
+        display: none;
+    }
+}
+
+.hider-for-tablets-mf {
+    @include min-width(tablet) {
+        display: none;
+    }
+}
+
+.hide-for-laptops-mf {
+    @include min-width(laptop) {
+        display: none;
+    }
+}
+
+.hide-for-desktop-mf {
+    @include min-width(desktop) {
+        display: none;
+    }
+}

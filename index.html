@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Generator App</title>
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./dist/styles.css">
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <!--JavaScript-->
+    <script type="module" src="./app/js/index.js" defer></script>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <main class="main flex flex-ai-c flex-jc-c flex-fd-c" id="main">
+        <header class="header flex flex-ai-c flex-jc-sb">
+            <h2>devfinder</h2>
+            <div class="darkmode-icon-container flex flex-ai-c moon" data-darkmode-icon id="moon">
+                <h3 class="darkmode-title">DARK</h3>
+                <img class="darkmode-icon" src="./assets/images/icon-moon.svg" alt="Moon">
+            </div>
+            <div class="darkmode-icon-container flex flex-ai-c sun hide" data-darkmode-icon id="sun">
+                <h3 class="darkmode-title">LIGHT</h3>
+                <img class="darkmode-icon" src="./assets/images/icon-sun.svg" alt="Sun">
+            </div>
+        </header>
+        <section class="search-bar flex flex-ai-c flex-jc-sb" id="search-bar">
+            <img src="./assets/images/icon-search.svg" alt="Search">
+            <input type="text" name="search" id="search" placeholder="Search Github username...">
+            <div class="error-message flex flex-ai-c" data-error-msg>
+                <p>No users found</p>
+            </div>
+            <button type="submit" class="search-btn" name="search-btn" id="search-btn">Search</button>
+        </section>
+
+        <section class="main-contents" id="main-contents">
+            <!--API-->
+            <div class="user-img">
+
+            </div>
+            <div class="user-details">
+                <div class="user-flex">
+                    <h1>${name}</h1>
+                    <p class="primary">${username}</p>
+                    <p>${joinAt}</p>
+                </div>
+            </div>
+            <div class="user-bio">
+                <p>${bio}</p>
+            </div>
+            <div class="users-repo flex flex-ai-c flex-jc-sb" id="users-repo">
+                <div class="repo">
+                    <h3>Repos</h3>
+                    <p>${repos}</p>
+                </div>
+                <div class="repo">
+                    <h3>Followers</h3>
+                    <p>${followers}</p>
+                </div>
+                <div class="repo">
+                    <h3>Following</h3>
+                    <p>${following}</p>
+                </div>
+            </div>
+            <div class="socials flex flex-ai-c flex-jc-sb">
+                <div class="social flex flex-ai-c flex-fd-c">
+                    <div class="soc flex flex-ai-c">
+                        <img src="./assets/images/icon-location.svg" alt="Location">
+                        <p>${location}</p>
+                    </div>
+
+                    <div class="soc flex flex-ai-c">
+                        <img src="./assets/images/icon-website.svg" alt="Website">
+                        <p>${blog}</p>
+                    </div>
+                </div>
+                <div class="social flex flex-ai-c flex-fd-c">
+                    <div class="soc flex flex-ai-c">
+                        <img src="./assets/images/icon-twitter.svg" alt="Twitter">
+                        <p>${twitter}</p>
+                    </div>
+                    <div class="soc flex flex-ai-c">
+                        <img src="./assets/images/icon-company.svg" alt="Company">
+                        <p>${company}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
