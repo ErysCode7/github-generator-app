@@ -5,6 +5,19 @@ const errorMsg = document.querySelector("[data-error-msg]")
 export const mainContents = document.querySelector("#main-contents");
 
 
+const userImg = document.querySelector("#user-img")
+const userName = document.querySelector("#user-name")
+const userUserName = document.querySelector("#user-username")
+const userjoinAt = document.querySelector("#join-at")
+const userBio = document.querySelector("#user-bio")
+const userRepo = document.querySelector("#user-repo")
+const userFollowers = document.querySelector("#user-followers")
+const userFollowing = document.querySelector("#user-following")
+const userLocation = document.querySelector("#user-location")
+const userBlog = document.querySelector("#user-blog")
+const userTwitter = document.querySelector("#user-twitter")
+const userCompany = document.querySelector("#user-company")
+
 const API_URL = `https://api.github.com/users/`
 const ME_URL = `https://api.github.com/users/Eryscode7`
 
@@ -55,57 +68,21 @@ const getMe = async () => {
             blog = "Not Available"
         }
 
-        mainContents.innerHTML = `
-        <div class="user-img">
-                <img id="user-img" src="${avatar}" alt="${username}">
-            </div>
-            <div class="user-details">
-                <div class="user-flex" id="user-flex">
-                    <h1>${name}</h1>
-                    <p class="primary">${username}</p>
-                    <p class="last">${joinAt}</p>
-                </div>
-            </div>
-            <div class="user-bio" id="users-bio">
-                <p>${bio}</p>
-            </div>
-            <div class="users-repo flex flex-ai-c flex-jc-sb" id="users-repo">
-                <div class="repo">
-                    <h3>Repos</h3>
-                    <p>${repos}</p>
-                </div>
-                <div class="repo">
-                    <h3>Followers</h3>
-                    <p>${followers}</p>
-                </div>
-                <div class="repo">
-                    <h3>Following</h3>
-                    <p>${following}</p>
-                </div>
-            </div>
-            <div class="socials flex flex-ai-c flex-jc-sb">
-                <div class="social flex flex-ai-c flex-fd-c">
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-location.svg" alt="Location">
-                        <p>${location}</p>
-                    </div>
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-website.svg" alt="Website">
-                        <p>${blog}</p>
-                    </div>
-                </div>
-                <div class="social flex flex-ai-c flex-fd-c">
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-twitter.svg" alt="Twitter">
-                        <p>${twitter}</p>
-                    </div>
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-company.svg" alt="Company">
-                        <p>${company}</p>
-                    </div>
-                </div>
-            </div>
-        `
+        userImg.src = avatar
+        userName.innerText = name
+        userUserName.innerText = username
+        userjoinAt.innerText = joinAt
+        userBio.innerText = bio
+
+        userRepo.innerText = repos
+
+        userFollowers.innerText = followers
+        userFollowing.innerText = following
+        userLocation.innerText = location
+
+        userBlog.innerText = blog
+        userTwitter.innerText = twitter
+        userCompany.innerText = company
 
         if (mainContents) {
             const moon = document.querySelector("#moon")
@@ -127,13 +104,9 @@ const getMe = async () => {
                 usersRepo.classList.toggle("darkmode")
                 searchBarInput.classList.toggle("darkmode")
                 mainContents.classList.toggle("main-contents-darkmode")
-                usersBio.classList.toggle("white-text")
+                userBio.classList.toggle("white-text")
                 userFlexLastP.classList.toggle("white-text")
                 socP.forEach(p => p.classList.toggle("white-text"))
-
-                if (usersRepo.classList.contains("darkmode")) {
-                    console.log("ok")
-                }
             }
 
             darkmodeIcon.forEach(dark => {
@@ -192,57 +165,21 @@ const getUsers = async () => {
             blog = "Not Available"
         }
 
-        mainContents.innerHTML = `
-        <div class="user-img">
-                <img id="user-img" src="${avatar}" alt="${username}">
-            </div>
-            <div class="user-details">
-                <div class="user-flex" id="user-flex">
-                    <h1>${name}</h1>
-                    <p class="primary">${username}</p>
-                    <p class="last">${joinAt}</p>
-                </div>
-            </div>
-            <div class="user-bio" id="users-bio">
-                <p>${bio}</p>
-            </div>
-            <div class="users-repo flex flex-ai-c flex-jc-sb" id="users-repo">
-                <div class="repo">
-                    <h3>Repos</h3>
-                    <p>${repos}</p>
-                </div>
-                <div class="repo">
-                    <h3>Followers</h3>
-                    <p>${followers}</p>
-                </div>
-                <div class="repo">
-                    <h3>Following</h3>
-                    <p>${following}</p>
-                </div>
-            </div>
-            <div class="socials flex flex-ai-c flex-jc-sb">
-                <div class="social flex flex-ai-c flex-fd-c">
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-location.svg" alt="Location">
-                        <p>${location}</p>
-                    </div>
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-website.svg" alt="Website">
-                        <p>${blog}</p>
-                    </div>
-                </div>
-                <div class="social flex flex-ai-c flex-fd-c">
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-twitter.svg" alt="Twitter">
-                        <p>${twitter}</p>
-                    </div>
-                    <div class="soc flex flex-ai-c">
-                        <img src="./assets/images/icon-company.svg" alt="Company">
-                        <p>${company}</p>
-                    </div>
-                </div>
-            </div>
-        `
+        userImg.src = avatar
+        userName.innerText = name
+        userUserName.innerText = username
+        userjoinAt.innerText = joinAt
+        userBio.innerText = bio
+
+        userRepo.innerText = repos
+
+        userFollowers.innerText = followers
+        userFollowing.innerText = following
+        userLocation.innerText = location
+
+        userBlog.innerText = blog
+        userTwitter.innerText = twitter
+        userCompany.innerText = company
 
 
 
@@ -256,5 +193,11 @@ const getUsers = async () => {
 getMe()
 
 searchBtn.addEventListener("click", getUsers)
+
+searchInput.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") {
+        getUsers()
+    }
+})
 
 

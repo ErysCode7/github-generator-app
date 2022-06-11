@@ -43,52 +43,52 @@
         <section class="main-contents" id="main-contents">
             <!--API-->
             <div class="user-img">
-
+                <img id="user-img" src="${avatar}" alt="${username}">
             </div>
             <div class="user-details">
-                <div class="user-flex">
-                    <h1>${name}</h1>
-                    <p class="primary">${username}</p>
-                    <p>${joinAt}</p>
+                <div class="user-flex" id="user-flex">
+                    <h1 id="user-name">${name}</h1>
+                    <p class="primary" id="user-username">${username}</p>
+                    <p id="join-at" class="last">${joinAt}</p>
                 </div>
             </div>
             <div class="user-bio">
-                <p>${bio}</p>
+                <p id="user-bio">${bio}</p>
             </div>
             <div class="users-repo flex flex-ai-c flex-jc-sb" id="users-repo">
                 <div class="repo">
                     <h3>Repos</h3>
-                    <p>${repos}</p>
+                    <p id="user-repo">${repos}</p>
                 </div>
                 <div class="repo">
                     <h3>Followers</h3>
-                    <p>${followers}</p>
+                    <p id="user-followers">${followers}</p>
                 </div>
                 <div class="repo">
                     <h3>Following</h3>
-                    <p>${following}</p>
+                    <p id="user-following">${following}</p>
                 </div>
             </div>
             <div class="socials flex flex-ai-c flex-jc-sb">
                 <div class="social flex flex-ai-c flex-fd-c">
                     <div class="soc flex flex-ai-c">
                         <img src="./assets/images/icon-location.svg" alt="Location">
-                        <p>${location}</p>
+                        <p id="user-location">${location}</p>
                     </div>
 
                     <div class="soc flex flex-ai-c">
                         <img src="./assets/images/icon-website.svg" alt="Website">
-                        <p>${blog}</p>
+                        <p id="user-blog">${blog}</p>
                     </div>
                 </div>
                 <div class="social flex flex-ai-c flex-fd-c">
                     <div class="soc flex flex-ai-c">
                         <img src="./assets/images/icon-twitter.svg" alt="Twitter">
-                        <p>${twitter}</p>
+                        <p id="user-twitter">${twitter}</p>
                     </div>
                     <div class="soc flex flex-ai-c">
                         <img src="./assets/images/icon-company.svg" alt="Company">
-                        <p>${company}</p>
+                        <p id="user-company">${company}</p>
                     </div>
                 </div>
             </div>
