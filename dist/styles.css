@@ -337,6 +337,14 @@ a, a::before, a::after {
   }
 }
 
+@media (max-width: 575.98px) {
+  #main section.main-contents .user-bio, #main section.main-contents .users-repo, #main section.main-contents .socials {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+}
+
 #main section.main-contents .user-bio p, #main section.main-contents .users-repo p, #main section.main-contents .socials p {
   color: #4b6a9b;
   white-space: wrap;
@@ -361,6 +369,24 @@ a, a::before, a::after {
 
 #main section.main-contents .users-repo .repo {
   padding: 0 1rem;
+}
+
+@media (max-width: 575.98px) {
+  #main section.main-contents .users-repo .repo {
+    padding: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #main section.main-contents .users-repo .repo h3 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #main section.main-contents .users-repo .repo p {
+    font-size: 0.875rem;
+  }
 }
 
 @media (max-width: 767.98px) {

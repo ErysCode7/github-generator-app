@@ -180,6 +180,10 @@
                 grid-column: 1/6;
             }
 
+            @include max-width(mobile) {
+                grid-column: 1/4;
+            }
+
             p {
                 color: $lm-text;
                 white-space: wrap;
@@ -206,6 +210,22 @@
 
             .repo {
                 padding: 0 1rem;
+
+                @include max-width(mobile) {
+                    padding: 0;
+                }
+
+                h3 {
+                    @include max-width(mobile) {
+                        font-size: 0.875rem;
+                    }
+                }
+
+                p {
+                    @include max-width(mobile) {
+                        font-size: 0.875rem;
+                    }
+                }
             }
         }
 
