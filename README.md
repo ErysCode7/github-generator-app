@@ -1,11 +1,10 @@
-# Frontend Mentor - Easybank landing page solution
+# Frontend Mentor - GitHub user search app solution
 
-This is a solution to the improve your coding skills by building realistic projects. 
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -13,16 +12,10 @@ This is a solution to the improve your coding skills by building realistic proje
 
 ## Overview
 
-
-### Screenshot
-
-![]()
-![]()
-
 ### Links
 
-- Solution URL: [https://github.com/ErysCode7/easybank-landing-page](https://github.com/ErysCode7/easybank-landing-page)
-- Live Site URL: [https://eryscode7.github.io/easybank-landing-page//](https://eryscode7.github.io/easybank-landing-page/)
+- Solution URL: [https://github.com/ErysCode7/github-generator-app](https://github.com/ErysCode7/github-generator-app)
+- Live Site URL: [https://eryscode7.github.io/github-generator-app/](https://eryscode7.github.io/github-generator-app/)
 
 ## My process
 
@@ -32,9 +25,11 @@ This is a solution to the improve your coding skills by building realistic proje
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Desktop-first workflow
 - SASS
 - JavaScript
+- Fetch API
+- Github API
 
 ## Author
 
